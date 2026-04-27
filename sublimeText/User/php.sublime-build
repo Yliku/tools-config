@@ -1,0 +1,6 @@
+// 在编辑器中按 ctrl+b 执行php代码
+{
+	"cmd": ["php", "$file"],
+	"file_regex": "php$",
+	"selector": "source.php"
+}

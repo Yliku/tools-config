@@ -1,0 +1,21 @@
+<!-- 
+content ：在CDATA中填补全内容，${1:'Hey'}  冒号后面的是默认值
+tabTrigger ：触发代码，输入后这里的值后按tab即可显示content的内容
+
+scope ：作用范围，该代码片段将作用于这种类型的文件中；比如： source.js, source.php, source.css, source.python, text.html.vue, text.html
+指定多个 scope，使用英文逗号“,”来分隔。
+如何知道文档的Scope是什么？Window下查看文件的scope类型：
+Ctrl+Shift+Alt+P 快捷键，文件的scope类型会显示在编辑器左下角，多个scope类型的文件我们只需要取第一个即可
+
+description ：描述信息
+
+下例为： js/html/vue文件中，输入con按tab键，会补全为console.log()，并将光标定位到 $(1) 内，编辑 $(1) 后按 tab 可以跳转到 $(2)
+-->
+<snippet>
+    <content>
+        <![CDATA[console.log(${1:111});]]>
+    </content>
+    <tabTrigger>con</tabTrigger>
+    <scope>source.js, text.html.vue, text.html.basic</scope>
+    <description>console</description>
+</snippet>

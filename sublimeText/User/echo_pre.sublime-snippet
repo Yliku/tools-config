@@ -1,0 +1,15 @@
+<!-- 
+content：在CDATA中填补全内容
+tabTrigger：触发代码
+scope：文件类型
+description：描述信息
+下例为： 输入epre按tab键 会补全，并将光标定位到()内。 
+-->
+<snippet>
+    <content>
+        <![CDATA[echo '<pre>'; print_r(${1}); echo '<pre>'; ]]>
+    </content>
+    <tabTrigger>epre</tabTrigger>
+    <scope>source.php, text.html.php</scope>
+    <description>echo pre</description>
+</snippet>

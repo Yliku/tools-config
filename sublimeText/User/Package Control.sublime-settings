@@ -1,0 +1,21 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"ChineseLocalizations",
+		"ConvertToUTF8",
+		"Emmet",
+		"Emmet Css Snippets",
+		"Package Control",
+		"PackageResourceViewer",
+		"Sass",
+		"SideBarEnhancements",
+		"Tailwind CSS",
+		"Tailwind CSS Autocomplete",
+		"Vue",
+		"Vuejs Snippets",
+	],
+}

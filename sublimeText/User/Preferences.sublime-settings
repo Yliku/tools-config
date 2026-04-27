@@ -1,0 +1,47 @@
+{
+	// 忽略插件，Vintage插件会让sublime的编辑模式切换成vim的编辑模式
+	"ignored_packages": [
+		"Vintage",		// 关闭Vim模式，防止使用过程中按Esc进入Vim模式
+/*"Vue",*/
+/*"Vuejs Snippets",*/
+/*"Vuejs Snippets Airbnb",*/
+/*"Vuejs Complete Package",*/
+/*"Emmet Css Snippets",*/
+	],
+	"update_check": false,	// 禁用自动更新
+	"theme": "Default.sublime-theme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"open_files_in_new_window": false,
+	"caret_style": "smooth",				// 设置光标闪动方式 smooth 、 phase 、 blink 、 solid
+	"default_encoding": "UTF-8",			// 设置文件的默认编码格式
+	"font_face": "YaHei Consolas Hybrid",	// 默认字体
+	"font_size": 9,							// 字体大小
+	"highlight_line": true,					// 鼠标所在的行高亮显示
+	"line_numbers": true,					// 是否显示行号
+	"margin": 0,							// 编辑区域的左边距
+	"show_encoding": true,					// 状态栏右下角显示当前文件的编码类型，比如UTF-8
+	"tab_size": 4,							// Tab键缩进符宽度，4个空格
+	"translate_tabs_to_spaces": false,		// false代表缩进用tab来缩进
+	"detect_indentation": false,			// ❗ 关键：禁止自动检测，新建空白文件时，能应用上面两个参数，tab缩进以及4个空格的缩进
+	"word_wrap": "true",					// 代码是否自动换行
+	// "keys": ["ctrl+shift+b"],
+	// "command": "open_in_browser",
+	// 解决鼠标双击变量时不能同时选中变量的$符号的问题，但会造成双击变量时不会匹配到同名的变量
+	// "word_separators": "./\\()\"'-:,.;<>~!@#%^&*|+=[]{}`~?",
+	"index_files": true,	// 启用索引 (true) Sublime会在后台扫描项目中所有文件的内容（包括子目录内的文件）。 构建一个符号索引数据库（如函数、类、变量等）。 提供更快、更精准的代码跳转、自动补全和符号搜索功能
+	"default_line_ending": "unix", // 设置默认换行符的格式为unix风格，其他参数： system"（默认值）根据操作系统；"windows"：强制使用 Windows 风格换行符（CRLF）
+	
+	"index_exclude_patterns": [		// 排除索引，将文件和文件夹从索引中排除，同时将它们保留在侧边栏中
+		".svn", ".git", ".hg", "CVS",
+		"node_modules",
+		"vendor",
+	],
+	"folder_exclude_patterns": [	// 排除文件，将文件和文件夹 同时从 索引和侧边栏中排除（左侧导航目录忽略显示以下文件）
+		// "node_modules",
+	],
+	"emmet.includeLanguages": {
+	  "vue": "html",
+	  "vue-html": "html",
+	  "javascript": "html",  // 使 JavaScript 部分也能使用 Emmet 缩写
+	},
+}
