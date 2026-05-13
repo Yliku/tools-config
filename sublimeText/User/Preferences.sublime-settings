@@ -31,13 +31,18 @@
 	"index_files": true,	// 启用索引 (true) Sublime会在后台扫描项目中所有文件的内容（包括子目录内的文件）。 构建一个符号索引数据库（如函数、类、变量等）。 提供更快、更精准的代码跳转、自动补全和符号搜索功能
 	"default_line_ending": "unix", // 设置默认换行符的格式为unix风格，其他参数： system"（默认值）根据操作系统；"windows"：强制使用 Windows 风格换行符（CRLF）
 	
-	"index_exclude_patterns": [		// 排除索引，将文件和文件夹从索引中排除，同时将它们保留在侧边栏中
-		".svn", ".git", ".hg", "CVS",
-		"node_modules",
-		"vendor",
+	"index_exclude_patterns": [		// 只排除索引，不隐藏文件夹；将文件和文件夹从索引中排除，同时将它们保留在侧边栏中；匹配任意层级，多 workspace / 子目录也有效
+		"*/node_modules/*",
+		"*/vendor/*"
 	],
-	"folder_exclude_patterns": [	// 排除文件，将文件和文件夹 同时从 索引和侧边栏中排除（左侧导航目录忽略显示以下文件）
-		// "node_modules",
+	"folder_exclude_patterns": [	// 彻底隐藏 + 不索引；将文件和文件夹 同时从 索引和侧边栏中排除（左侧导航目录忽略显示以下文件）
+		".svn", ".git", ".hg", "CVS",
+		"storage/logs",
+		"bootstrap/cache",
+	],
+	"binary_file_patterns": [		// 让搜索跳过大文件
+		"*.db",
+		"*.sqlite"
 	],
 	"emmet.includeLanguages": {
 	  "vue": "html",
