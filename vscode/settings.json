@@ -1,0 +1,11 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontSize": 12,
+    "workbench.colorTheme": "Monokai",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "editor.minimap.enabled": false,
+    "chat.viewSessions.orientation": "stacked",
+    "workbench.tree.indent": 24,
+    "editor.wordWrap": "on"
+}
